@@ -52,3 +52,21 @@ h1 {
         text-decoration: none;
     }
 }
+
+#About {
+    background-color: var(--dark-color);
+    color: var(--font-light) ;
+    border-radius: 5px;
+}
+#About p {
+    font-size: 25px;
+}
+
+#Experience {
+    background-color: var(--dark-color);
+    color: var(--font-light) ;
+    border-radius: 5px;
+}
+#Experience p {
+    font-size: 25px;
+}
