@@ -1,14 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@700&family=Share+Tech+Mono&family=Vazirmatn:wght@200&display=swap');
+:root{
+    --dark-color:#223322;
+    --font-light:#ffffff;
+    --font-dark:#9d9d9d;
+}
+
 *{
     padding: 0;
     margin: 0;
     font-family: 'Share Tech Mono', monospace;
 }
+body{
+    background-color: black;
+    height: 1500px;
+}
+h1 {
+    font-size: 50px;
+}
 #Navbar{
-    background-color: #223322;
+    background-color: var(--dark-color);
+    border-radius: 5px;
 }
 #Navbar a {
-    color :#9d9d9d;
+    color :var(--font-dark);
     font-size: 25px;
     margin-left: 38px;
+}
+#Navbar a:hover {
+    transform: scale(101%);
+    color: var(--font-light);
+}
+#Profile {
+    background-color: var(--dark-color);
+    color: var(--font-light);
+    border-radius: 5px;
+}
+#Profile img {
+    height: 250px;
+    margin: auto;
+    display: block;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+@media only screen and (max-width: 575px) {
+    .skill button {
+        display:  block;
+        width: 200px;
+        margin: auto;
+    }
+    .skill a {
+        text-decoration: none;
+    }
 }
