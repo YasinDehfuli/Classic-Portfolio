@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@700&family=Share+Tech+Mono&family=Vazirmatn:wght@200&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Share Tech Mono', monospace;
+}
+#Navbar{
+    background-color: #223322;
+}
+#Navbar a {
+    color :#9d9d9d;
+    font-size: 25px;
+    margin-left: 38px;
+}

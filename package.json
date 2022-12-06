@@ -1,0 +1,33 @@
+{
+  "name": "classic-portfolio",
+  "version": "1.0.0",
+  "description": "<img src=\"assets/img/Readme.gif\" style=\"width: 100%\">",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YasinDehfuli/Classic-Portfolio.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "-",
+    "Matrix",
+    "-",
+    "CV",
+    "-",
+    "Resume"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YasinDehfuli/Classic-Portfolio/issues"
+  },
+  "homepage": "https://github.com/YasinDehfuli/Classic-Portfolio#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1",
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.2.3"
+  }
+}
