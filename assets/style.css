@@ -77,3 +77,27 @@ canvas {
     background-repeat: repeat-y;
 
 }
+#Education {
+    background-color: var(--dark-color);
+    color: var(--font-light) ;
+    border-radius: 5px;
+}
+#Education p {
+    font-size: 25px;
+}
+#Skill {
+    background-color: var(--dark-color);
+    color: var(--font-light) ;
+    border-radius: 5px;
+}
+#Skill p {
+    font-size: 25px;
+}
+#Project {
+    background-color: var(--dark-color);
+    color: var(--font-light) ;
+    border-radius: 5px;
+}
+#Project p {
+    font-size: 25px;
+}
