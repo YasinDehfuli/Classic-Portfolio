@@ -70,3 +70,10 @@ h1 {
 #Experience p {
     font-size: 25px;
 }
+canvas {
+    display:block;
+    position: fixed;
+    z-index: -9999;
+    background-repeat: repeat-y;
+
+}
