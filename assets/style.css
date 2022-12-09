@@ -42,6 +42,9 @@ h1 {
     border: 1px solid black;
     border-radius: 5px;
 }
+#Profile h1 {
+    color: var(--font-dark);
+}
 @media only screen and (max-width: 575px) {
     .skill button {
         display:  block;
@@ -53,23 +56,6 @@ h1 {
     }
 }
 
-#About {
-    background-color: var(--dark-color);
-    color: var(--font-light) ;
-    border-radius: 5px;
-}
-#About p {
-    font-size: 25px;
-}
-
-#Experience {
-    background-color: var(--dark-color);
-    color: var(--font-light) ;
-    border-radius: 5px;
-}
-#Experience p {
-    font-size: 25px;
-}
 canvas {
     display:block;
     position: fixed;
@@ -77,27 +63,18 @@ canvas {
     background-repeat: repeat-y;
 
 }
-#Education {
+
+.section-box{
     background-color: var(--dark-color);
     color: var(--font-light) ;
     border-radius: 5px;
 }
-#Education p {
+.section-box p {
     font-size: 25px;
 }
-#Skill {
-    background-color: var(--dark-color);
-    color: var(--font-light) ;
-    border-radius: 5px;
+.section-box h1 {
+    color: var(--font-dark);
 }
-#Skill p {
-    font-size: 25px;
-}
-#Project {
-    background-color: var(--dark-color);
-    color: var(--font-light) ;
-    border-radius: 5px;
-}
-#Project p {
-    font-size: 25px;
+.val{
+    float: right;
 }
