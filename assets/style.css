@@ -3,9 +3,11 @@
     --dark-color:#223322;
     --font-light:#ffffff;
     --font-dark:#9d9d9d;
+    --light-color:rgba(161,180,150,0.5);
 }
 
 *{
+
     padding: 0;
     margin: 0;
     font-family: 'Share Tech Mono', monospace;
@@ -31,7 +33,7 @@ h1 {
     color: var(--font-light);
 }
 #Profile {
-    background-color: var(--dark-color);
+    background-color: var(--light-color);
     color: var(--font-light);
     border-radius: 5px;
 }
@@ -65,7 +67,7 @@ canvas {
 }
 
 .section-box{
-    background-color: var(--dark-color);
+    background-color: var(--light-color);
     color: var(--font-light) ;
     border-radius: 5px;
 }
@@ -77,4 +79,12 @@ canvas {
 }
 .val{
     float: right;
+}
+.section-box:hover{
+    background-color: var(--dark-color);
+    color: var(--font-light) ;
+    border-radius: 5px;
+}
+#Profile:hover{
+    background-color: var(--dark-color);
 }
