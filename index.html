@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="assets/progress-wrap.css">
+
 </head>
 <body>
 <!--matrix-->
@@ -45,7 +47,7 @@
                         <a class="nav-link " href="#Skill">Skill</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#Project">Project</a>
+                        <a class="nav-link " href="#Social">Project</a>
                     </li>
                 </ul>
             </div>
@@ -175,7 +177,8 @@
             </p>
             <p class="p-3">
                 <span>2022 :</span> This is my new start in Developing and i start Front-End Web Develop at the first
-                half of the year & Start Back-End Web Develop at the Second half of the year 2022 in Teran Centeral Department To Be Going To Full
+                half of the year & Start Back-End Web Develop at the Second half of the year 2022 in Teran Centeral
+                Department To Be Going To Full
                 Stack Web Developer .
             </p>
         </div>
@@ -265,23 +268,40 @@
 </section>
 <!-- Skill SEction End -->
 <!-- Project Section -->
-<section id="Project" class="section-box container mt-4">
+<section id="Social" class="section-box container mt-4">
 
     <div>
         <div class="section-title p-4">
-            <h1>Project</h1>
+            <h1>Social Link</h1>
             <hr>
-            dddddddddddddddddddddddddddd <br>fklsdjflk
         </div>
-
     </div>
 </section>
 <!-- Project SEction End -->
 <!-- Footer-->
 <div class="text-center mt-5">
-    <button href="#TopHeader">Go To Top
+    <button class="mb-5" onclick="topFunction()" id="myBtn" title="Go to top">Go To Top
     </button>
 </div>
+<script >
+    // Get the button
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.margin = "auto";
+}
+}
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+</script>
 <!--Footer And-->
 </body>
 </html>

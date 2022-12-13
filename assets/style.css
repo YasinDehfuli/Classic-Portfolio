@@ -61,7 +61,7 @@ h1 {
 canvas {
     display:block;
     position: fixed;
-    z-index: -9999;
+    z-index: -100;
     background-repeat: repeat-y;
 
 }
@@ -93,12 +93,11 @@ button {
     --green: #1BFD9C;
     font-size: 15px;
     padding: 0.7em 2.7em;
-    letter-spacing: 0.06em;
+    letter-spacing: 0.08em;
     position: relative;
-    font-family: inherit;
     border-radius: 0.6em;
     overflow: hidden;
-    transition: all 0.3s;
+    transition: all 0.4s;
     line-height: 1.4em;
     border: 2px solid var(--green);
     background: linear-gradient(to right, rgba(27, 253, 156, 0.1) 1%, transparent 40%,transparent 60% , rgba(27, 253, 156, 0.1) 100%);
@@ -129,4 +128,7 @@ button:hover:before {
 #Education span {
     color: black;
 
+}
+a{
+    text-decoration: none;
 }
