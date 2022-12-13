@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <link rel="stylesheet" href="assets/progress-wrap.css">
 
 </head>
 <body>
@@ -47,7 +46,7 @@
                         <a class="nav-link " href="#Skill">Skill</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link " href="#Social">Project</a>
+                        <a class="nav-link " href="#Portfolio">Project</a>
                     </li>
                 </ul>
             </div>
@@ -171,10 +170,12 @@
                 <span>2016 :</span> Graduate in Computer And Got Dipluma in 2016 For ICDL , C# And HTML ; At All This is
                 My start of Developing And Coding And Start of Loving Code .
             </p>
+            <br>
             <p class="p-3">
                 <span>2018 :</span> Graduate In Software And Got Associate degree Of Software Enginer & I learn SQL ,
                 DataBase , HTML CSS , until 2016-2018 .
             </p>
+            <br>
             <p class="p-3">
                 <span>2022 :</span> This is my new start in Developing and i start Front-End Web Develop at the first
                 half of the year & Start Back-End Web Develop at the Second half of the year 2022 in Teran Centeral
@@ -268,40 +269,73 @@
 </section>
 <!-- Skill SEction End -->
 <!-- Project Section -->
-<section id="Social" class="section-box container mt-4">
+<section id="Portfolio" class="section-box container mt-4">
 
     <div>
         <div class="section-title p-4">
-            <h1>Social Link</h1>
+            <h1>Portfolio</h1>
             <hr>
+            <b style="font-size: 55px">Hello</b>
+            <br>
+            <span style="font-size: 40px">
+                World.
+            </span>
+            <p>
+                This some of my Social medias if you want contact me .
+            </p>
+
         </div>
     </div>
 </section>
+
 <!-- Project SEction End -->
+<!--Btn To Top-->
+<section>
+    <div class="text-center mt-5">
+        <button class="mb-5" onclick="topFunction()" id="myBtn" title="Go to top">Go To Top
+        </button>
+    </div>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.margin = "auto";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</section>
 <!-- Footer-->
-<div class="text-center mt-5">
-    <button class="mb-5" onclick="topFunction()" id="myBtn" title="Go to top">Go To Top
-    </button>
-</div>
-<script >
-    // Get the button
-    let mybutton = document.getElementById("myBtn");
-
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.margin = "auto";
-}
-}
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-</script>
+<footer id="footer" class="container">
+    <div class="container">
+        <h3>Contact Me</h3>
+        <div class="social-links">
+            <a href="mailto:ydehfuli@gmail.com" target="_blank" class="gmail"><i class="fab fa-google"></i></a>
+            <a href="https://www.Linkdin.com/YasinDehfuli" target="_blank"  class="Linkdin"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.Telegram.me/YasinDehfuli" target="_blank" class="telegram"><i class="fab fa-telegram"></i></a>
+            <a href="https://www.Twitter.com/YasinDehfuli" target="_blank" class="twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.github.com/YasinDehfuli" target="_blank" class="linkedin"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="copyright">
+            2022 &copy; Portfolio <strong><span>Nisay</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            Designed by <a href="https://github.com/YasinDehfuli" target="_blank">Nisay</a>
+        </div>
+    </div>
+</footer>
 <!--Footer And-->
 </body>
 </html>

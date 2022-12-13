@@ -132,3 +132,70 @@ button:hover:before {
 a{
     text-decoration: none;
 }
+#bgLinks {
+    width: 100%;
+    background-color: black;
+    height: 300px;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+    background: rgba(36,39,52,0.5);
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    padding: 30px 0;
+    border-radius: 5px;
+}
+
+#footer h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--font-light);
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    padding: 0;
+    margin: 0 0 15px 0;
+}
+
+#footer p {
+    font-size: 15px;
+    font-style: italic;
+    padding: 0;
+    margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+    margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+    font-size: 18px;
+    display: inline-block;
+    background: var(--light-color);
+    color: #fff;
+    line-height: 1;
+    padding: 8px 0;
+    margin-right: 4px;
+    border-radius: 50%;
+    text-align: center;
+    width: 36px;
+    height: 36px;
+    transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+    background: var(--dark-color);
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer .copyright {
+    margin: 0 0 5px 0;
+}
+
+#footer .credits {
+    font-size: 13px;
+}
