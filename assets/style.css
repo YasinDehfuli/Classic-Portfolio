@@ -22,6 +22,7 @@ h1 {
 #Navbar{
     background-color: var(--dark-color);
     border-radius: 5px;
+    z-index: 99;
 }
 #Navbar a {
     color :var(--font-dark);
@@ -36,6 +37,7 @@ h1 {
     background-color: var(--light-color);
     color: var(--font-light);
     border-radius: 5px;
+    transition: 666ms;
 }
 #Profile img {
     height: 250px;
@@ -70,6 +72,7 @@ canvas {
     background-color: var(--light-color);
     color: var(--font-light) ;
     border-radius: 5px;
+    transition: 666ms;
 }
 .section-box p {
     font-size: 25px;
@@ -198,4 +201,104 @@ a{
 
 #footer .credits {
     font-size: 13px;
+}
+
+
+.Pcontainer {
+    width: 80%;
+    padding: 50px 0;
+    margin: 50px auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.Pcontainer:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    width: 2px;
+    height: 100%;
+    background: #CCD1D9;
+
+}
+
+.timeline-block {
+    width: -webkit-calc(50% + 8px);
+    width: -moz-calc(50% + 8px);
+    width: calc(50% + 8px);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -moz-box-pack: justify;
+    justify-content: space-between;
+    clear: both;
+}
+
+.timeline-block-right {
+    float: right;
+}
+
+.timeline-block-left {
+    float: left;
+    direction: rtl
+}
+
+.marker {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #F5F7FA;
+    background: black;
+    margin-top: 10px;
+    z-index: 10;
+}
+
+.timeline-content {
+    width: 95%;
+    padding: 0 15px;
+    color: var(--font-light);
+}
+
+.timeline-content h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    font-weight: 500
+}
+
+.timeline-content span {
+    font-size: 15px;
+    color: var(--font-dark);
+}
+
+.timeline-content p {
+    font-size: 14px;
+    line-height: 1.5em;
+    word-spacing: 1px;
+    color: var(--font-light);
+}
+
+
+@media screen and (max-width: 768px) {
+    .Pcontainer:before {
+        left: 8px;
+        width: 2px;
+    }
+    .timeline-block {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .timeline-block-right {
+        float: none;
+    }
+
+    .timeline-block-left {
+        float: none;
+        direction: ltr;
+    }
 }
