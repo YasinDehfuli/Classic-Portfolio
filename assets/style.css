@@ -96,7 +96,7 @@ canvas {
     background-color: var(--dark-color);
 }
 
-button {
+.backtop-btn {
     --green: #1BFD9C;
     font-size: 15px;
     padding: 0.7em 2.7em;
@@ -112,12 +112,12 @@ button {
     box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.4), 0 0 9px 3px rgba(27, 253, 156, 0.1);
 }
 
-button:hover {
+.backtop-btn:hover {
     color: #82ffc9;
     box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
 }
 
-button:before {
+.backtop-btn:before {
     content: "";
     position: absolute;
     left: -4em;
@@ -128,7 +128,7 @@ button:before {
     background: linear-gradient(to right, transparent 1%, rgba(27, 253, 156, 0.1) 40%,rgba(27, 253, 156, 0.1) 60% , transparent 100%);
 }
 
-button:hover:before {
+.backtop-btn:hover:before {
     transform: translateX(15em);
 }
 
@@ -144,6 +144,151 @@ a{
     background-color: black;
     height: 300px;
 }
+
+/*--------------------------------------------------------------
+# my works
+--------------------------------------------------------------*/
+#Works a {
+    text-decoration: none;
+    color: var(--font-light);
+}
+#Works .img-box {
+    position: relative;
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    display: block;
+    color: white;
+    height: 256px;
+}
+#Works .img-box .text-title {
+    font-weight: bolder;
+    text-align: center;
+    font-size: 18px;
+    color: #ddd;
+    text-shadow: 3px 3px 5px #14181B;
+    cursor: default;
+}
+#Works .img-box .text-desc {
+    text-align: center;
+    font-size: 15px;
+    color: var(--font-dark);
+    text-shadow: 5px 5px 5px #1D2429;
+    cursor: default;
+}
+#Works .img-box button {
+    cursor: pointer;
+    margin: 12px auto;
+    z-index: 2;
+    display: block;
+    width: fit-content;
+    height: auto;
+    outline: none;
+    border: none;
+    background-color: inherit;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 3px 8px;
+    position: relative;
+    color: var(--font-dark);
+}
+#Works .img-box button::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: scaleX(0.2) scaleY(0.5) translate(250%, 100%);
+    border-top: solid 2px #1BFD9C;
+    border-left: solid 4px #1BFD9C;
+    transition: all .4s ease-in-out;
+}
+#Works .img-box button::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%) scaleX(0.2) scaleY(0.5);
+    border-bottom: solid 2px #1BFD9C;
+    border-right: solid 4px #1BFD9C;
+    transition: all .4s ease-in-out;
+}
+#Works .img-box button:hover::before {
+    transform: translate(0%, 0%) scaleX(1) scaleY(1);
+    border-top: solid 1px #1BFD9C;
+    border-left: solid 1px #1BFD9C;
+}
+#Works .img-box button:hover::after {
+    transform: scaleX(1) scaleY(1) translate(0%, 0%);
+    border-bottom: solid 1px #1BFD9C;
+    border-right: solid 1px #1BFD9C;
+}
+#Works .img-box:hover .overlay {
+    opacity: 1;
+}
+#Works img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+#Works .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: #14181b;
+    background: linear-gradient(165deg, rgba(20, 24, 27, 0.646078) 30%, var(--dark-color) 55%, rgba(29, 36, 41, 0.587255) 73%);
+}
+#Works .center-box {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+}
+#Works .works-pagination #app {
+    width: 180px;
+    height: 20px;
+    margin: 0 auto;
+    transform: translateY(-50%);
+    overflow: hidden;
+    z-index: 1;
+}
+#Works .works-pagination .button {
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin-right: 20px;
+    background-color: var(--dark-color);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease width;
+}
+#Works .works-pagination .button:last-child {
+    margin-right: 0;
+}
+#Works .works-pagination .button.active {
+    width: 60px;
+    cursor: auto;
+}
+
+/*--------------------------------------------------------------
+# my works finish
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Footer
@@ -277,7 +422,7 @@ a{
 
 .timeline-content span {
     font-size: 15px;
-    color: black;
+    color: var(--font-dark);
 }
 
 .timeline-content p {
