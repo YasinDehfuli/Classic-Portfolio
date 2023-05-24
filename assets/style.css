@@ -78,7 +78,8 @@ canvas {
     transition: 666ms;
 }
 .section-box p {
-    font-size: 25px;
+    font-size: 21px;
+    line-height: 1.6;
 }
 .section-box h1 {
     color: var(--font-dark);
@@ -311,6 +312,7 @@ a{
    }
     .section-title p{
         font-size: 14px;
+        line-height: 1.4;
     }
 }
 
