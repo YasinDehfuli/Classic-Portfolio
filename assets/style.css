@@ -273,7 +273,7 @@ a{
 
 .timeline-content span {
     font-size: 15px;
-    color: var(--font-dark);
+    color: black;
 }
 
 .timeline-content p {
