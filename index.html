@@ -7,8 +7,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="rgba(161,180,150,0.55)"/>
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#223322"/>
-    <link rel="icon" href="assets/img/Logo.svg" type="image/icon type">
-    <title>Portfolio</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+    <title>Portfolio | Yasin Dehfuli </title>
     <!--    Scripts-->
     <script src="node_modules/jquery/dist/jquery.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
@@ -27,7 +30,7 @@
 <header class="p-4">
     <nav class="navbar navbar-expand-lg  container  fixed-top  ">
         <div class="container-fluid  " id="Navbar">
-            <a class="navbar-brand " href="#Profile">Profile</a>
+            <div class="navbar-brand"><a href="index-fa.html"><img src="assets/img/favicon/favicon-32x32.png" alt=""></a></div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -35,7 +38,10 @@
             <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav ">
                     <li class="nav-item">
-                        <a class="nav-link active " aria-current="page" href="#About">About</a>
+                        <a class="nav-link active" aria-current="page" href="#Profile">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#About">About</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#Experience">Experience</a>
@@ -105,18 +111,25 @@
                 </div>
                 <!--                Section Skills -->
                 <span class="skill">
-<!--                    GitHub-->
-<a href="https://www.Github.com/YasinDehfuli" target="_blank"><button type="button"
-                                                                      class="btn btn-dark col-md-4 col-sm-12 col-lg-3 my-2"><i
-        class="fab fa-github" aria-hidden="true"></i> Github</button></a>
+
+                    <!--                    GitHub-->
+<a href="https://www.Github.com/YasinDehfuli" target="_blank">
+    <button type="button" class="btn pro-btn btn-dark col-md-4 col-sm-12 col-lg-3 my-2">
+        <i class="fab fa-github" aria-hidden="true"></i> Github
+    </button>
+</a>
                     <!--                    Telegram-->
-<a href="https://Telegram.Me/iYasin" target="_blank"><button type="button"
-                                                             class="btn btn-primary col-md-4 col-sm-12 col-lg-3 my-2"><i
-        class="fab fa-telegram" aria-hidden="true"></i> Telegram </button></a>
+<a href="https://Telegram.Me/iYasin" target="_blank">
+    <button type="button" class="btn pro-btn btn-primary col-md-4 col-sm-12 col-lg-3 my-2">
+        <i class="fab fa-telegram" aria-hidden="true"></i> Telegram
+    </button>
+</a>
                     <!--                    Twitter-->
-<a href="https://www.linkedin.com/in/Yasin-Dehfuli" target="_blank"><button type="button"
-                                                                            class="btn btn-info col-md-3 col-sm-12 col-lg-3 my-2"><i
-        class="fab fa-linkedin-in" aria-hidden="true"></i> Linkedin</button></a>
+<a href="https://www.linkedin.com/in/Yasin-Dehfuli" target="_blank">
+    <button type="button" class="btn pro-btn btn-info col-md-3 col-sm-12 col-lg-3 my-2">
+        <i class="fab fa-linkedin-in" aria-hidden="true"></i> Linkedin
+    </button>
+</a>
 
 
                 </span>
@@ -408,7 +421,8 @@
 
                     <div class="col-lg-4 col-md-4 col-sm-6 my-3 my-md-5 works-box">
                         <div class="img-box">
-                            <img src="assets/img/works/github-achievement.png" class="img-fluid" alt="Get-Github-Achievements">
+                            <img src="assets/img/works/github-achievement.png" class="img-fluid"
+                                 alt="Get-Github-Achievements">
                             <div class="overlay">
                                 <div class="center-box">
                                     <div class="text-title">Github Achievement Course</div>
@@ -496,7 +510,7 @@
                                     <div class="text-title">Personal Portfolio</div>
                                     <div class="text-desc">Front-End & Design With Bootstrap V5.2</div>
 
-                                    <a href="#" >
+                                    <a href="#">
                                         <button>Live Preview</button>
                                     </a>
 
