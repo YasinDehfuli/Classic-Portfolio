@@ -1,0 +1,604 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="rgba(161,180,150,0.55)"/>
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#223322"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+    <style>
+        @font-face {
+            src: url("assets/fonts/Cairo.ttf");
+            font-family: Cairo;
+        }
+    </style>
+    <title>رزومه | یاسین دهفولی</title>
+    <!--    Scripts-->
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <!--    Links -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+</head>
+<body>
+<!--matrix-->
+<canvas id="c"></canvas>
+<script src="assets/script.js"></script>
+<!--matrix-->
+<!-- Navbar Start -->
+<header class="p-4">
+    <nav class="navbar navbar-expand-lg  container  fixed-top  ">
+        <div class="container-fluid  " id="Navbar">
+            <div class="navbar-brand"><a href="index.html"><img src="assets/img/favicon/favicon-32x32.png" alt=""></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+                <ul class="navbar-nav ">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Profile">پروفایل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#About">درباره</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Experience">تجربیات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Education">تحصیلات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#Skill">مهارت</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#Portfolio">نقشه راه</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#Works">پروژه ها</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- Navbar End -->
+
+<!-- Profile -->
+<section id="Profile" class="container mt-5">
+    <div>
+
+        <div class="section-title p-4">
+            <h1>پروفایل</h1>
+            <hr>
+        </div>
+
+        <div class="row p-2">
+            <div class="col-lg-4">
+                <img src="assets/img/avatar.jpeg" class="img-fluid p-3 mb-5 " alt="">
+            </div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content">
+                <h3>برنامه فول استک وب </h3>
+                <p class="fst-italic">
+                    از سال 2021, در زمینه برنامه نویسی وب مشغول به کار شدم;
+                </p>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <strong>نام:</strong> <span>یاسین دهفولی</span>
+                            </li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>شهر:</strong> <span>ایران - البرز</span>
+                            </li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>تلفن:</strong>
+                                <span>09028464066</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>تاریخ تولد:</strong>
+                                <span>16 تیر 1378</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <ul>
+                            <li><i class="bi bi-chevron-right"></i> <strong>سن:</strong> <span>23</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>سطح:</strong> <span>Junior</span></li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>ایمیل:</strong>
+                                <a href="mailto:ydehfuli@gmail.com" target="_blank" style="color:white;">Ydehfuli[at]Gmail.com</a>
+                            </li>
+                            <li><i class="bi bi-chevron-right"></i> <strong>پروژه:</strong> <span
+                                    style="color:green;">در دسترس</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--                Section Skills -->
+                <span class="skill">
+
+                    <!--                    GitHub-->
+<a href="https://www.Github.com/YasinDehfuli" target="_blank">
+    <button type="button" class="btn pro-btn btn-dark col-md-4 col-sm-12 col-lg-3 my-2">
+        <i class="fab fa-github" aria-hidden="true"></i> Github
+    </button>
+</a>
+                    <!--                    Telegram-->
+<a href="https://Telegram.Me/iYasin" target="_blank">
+    <button type="button" class="btn pro-btn btn-primary col-md-4 col-sm-12 col-lg-3 my-2">
+        <i class="fab fa-telegram" aria-hidden="true"></i> Telegram
+    </button>
+</a>
+                    <!--                    Twitter-->
+<a href="https://www.linkedin.com/in/Yasin-Dehfuli" target="_blank">
+    <button type="button" class="btn pro-btn btn-info col-md-3 col-sm-12 col-lg-3 my-2">
+        <i class="fab fa-linkedin-in" aria-hidden="true"></i> Linkedin
+    </button>
+</a>
+
+
+                </span>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!--Profile End-->
+
+<!-- About Section -->
+<section id="About" class="section-box container mt-4">
+
+
+    <div>
+        <div class="section-title p-4">
+            <h1>درباره</h1>
+            <hr>
+            <p class="p-3"> سلام, من یاسین هستم. یک برنامه نویس تازه کار در زمینه وب, مشتاق به یادگیری تجربه های جدید و
+                مهارت های نو و به روز. در حال حاظر در زمینه وب فعالیت میکنم, و در شاخه فرانت انت با ابزار های Bootstrap
+                - Vue.js و ... . در زمینه بک اند PHP - Laravel -SQL مشغول به یادگیری و کسب تجربه های جدید هستم.
+                <br>عاشق لینوکس و دنیای اپن سورس هستم و سعی دارم تا با خلق پروژه های نو یونیک در این زمینه, کمکی به
+                جامعه برنامه نویس و امثال خودم کرده باشم.
+                و هدفم از دنیای وب, یادگیری هر چه بیشتر و خلق پروژه هایی و نو کار آمد. و بهترین شدن در این حوضه و همکاری
+                و پیوستن به تیم های به روز و سطح بالا و یادگیری تجربه های تیمی جدید هست.
+            </p>
+        </div>
+
+    </div>
+</section>
+<!-- About Section End -->
+
+<!-- Experience Section -->
+<section id="Experience" class="section-box container mt-4">
+
+    <div>
+        <div class="section-title p-4">
+            <h1>تجربیات</h1>
+            <hr>
+            <p class="p-3"> در حال حاظر به عنوان عضوی از تیم
+                <a href="https://github.com/4xmen" style="color:#d6181a ">4xmen</a>
+                مشغول فعالیت در زمینه پروژه های اپن سورس هستم. و در این تیم با کمک اساتید سعی در ارتقای سطح دانش خود در
+                زمینه برنامه نویسی دارم. علاوه بر این به صورت فریلنسر پروژه های شخصی وبسایت ها و فرانت اند و بک اند قالب
+                های فروشگاهی و وبسایت رزومه. انجام میدهم.
+                <br>
+                - در صورتی که مشتاقید پروژه های من را مشاهده کنید, به <a href="https://github.com/YasinDehfuli"
+                                                                         target="_blank" style="color: black">گیت
+                    هاب</a>
+                من مراجعه کنید
+            </p>
+        </div>
+
+    </div>
+</section>
+<!-- Experience Section End -->
+
+<!-- Education Section -->
+<section id="Education" class="section-box container mt-4">
+
+    <div>
+        <div class="section-title p-4">
+            <h1>تحصیلات</h1>
+            <hr>
+            <p class="p-3">
+                <span>1394 :</span> در این سال, فارق التحصیل رشته کامپیوتر از هنرستان فنی شده. در این دوره با مبانی
+                کامپیوتر آشنا شده و به صورت بیسیک با کامپیوتر آشنا شدم.
+            </p>
+            <br>
+            <p class="p-3">
+                <span>1396 :</span> از دانشکده فنی در رشته نرم افزار کامپیوتر فارق التحصیل شده, و مدرک فوق دیپلم نرم
+                افزار خود را در این سال دریافت کردم.
+            </p>
+            <br>
+            <p class="p-3">
+                <span>1400 :</span> استارت برنامه نویسی تخصصی و حرفه ایی از این سال خورد و در این سال در مجتمع فنی تهران
+                اقدام به یادگیری برنامه نویسی وب فرانت اند و بک اند و دیتا بیس و ورژن کنترلر کردم.
+            </p>
+            <br>
+            <p class="p-3">
+                <span>1401 :</span> و حالا مدرک بین المللی خودم با عنوان Full Stack Web Developer را دریافت کردم و
+                همچنان در حال گسترش دانش خود در این زمینه هستم و در حال ساخت رزومه برای خود هستم.
+            </p>
+        </div>
+
+    </div>
+</section>
+<!-- Education Section End -->
+
+<!-- Skill Section -->
+<section id="Skill" class="section-box container mt-4 ">
+
+    <div>
+        <div class="section-title p-4">
+            <h1>مهارت</h1>
+            <hr>
+
+            <div class="row p-2">
+                <div class="col-12">
+                    <h3 style="text-align: center">Languages Libraries & FrameWorks ...</h3>
+                </div>
+                <div class="col-6">
+
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-success " role="progressbar" aria-label="Success example"
+                             style="width: 82%" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Linux</span>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-success " role="progressbar" aria-label="Success example"
+                             style="width: 97%" aria-valuenow="97" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>HTML</span>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-success" role="progressbar" aria-label="Info example"
+                             style="width: 93%"
+                             aria-valuenow="99" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>CSS</span>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-success" role="progressbar" aria-label="Warning example"
+                             style="width: 79%"
+                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>JavaScript</span>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-success" role="progressbar" aria-label="Danger example"
+                             style="width: 76%"
+                             aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>JQuery</span>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-success" role="progressbar" aria-label="Danger example"
+                             style="width: 66%"
+                             aria-valuenow="79" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>PHP</span>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-success" role="progressbar" aria-label="Danger example"
+                             style="width: 82%"
+                             aria-valuenow="79" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>CodePen Projects</span>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-success" role="progressbar" aria-label="Danger example"
+                             style="width: 89%"
+                             aria-valuenow="89" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>TailwindCss</span>
+                </div>
+                <!--                part 2 col-->
+                <div class="col-6">
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-success " role="progressbar" aria-label="Success example"
+                             style="width: 91%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Bootstrap</span>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-success" role="progressbar" aria-label="Info example"
+                             style="width: 68%"
+                             aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>VueJs</span>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-success" role="progressbar" aria-label="Warning example"
+                             style="width: 92%"
+                             aria-valuenow="92" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Git, GitHub</span>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-success" role="progressbar" aria-label="Danger example"
+                             style="width: 80%"
+                             aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Semantic-Ui</span>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-success" role="progressbar" aria-label="Danger example"
+                             style="width: 82%"
+                             aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Laravel</span>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-success" role="progressbar" aria-label="Danger example"
+                             style="width: 73%"
+                             aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>PostMan</span>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-success" role="progressbar" aria-label="Danger example"
+                             style="width: 87%"
+                             aria-valuenow="87" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>SQL, MariaDB</span>
+                    <div class="progress mt-2">
+                        <div class="progress-bar bg-success" role="progressbar" aria-label="Danger example"
+                             style="width: 77%"
+                             aria-valuenow="77" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>Npm Package</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Skill Section End -->
+
+<!-- Project Section -->
+<section id="Portfolio" class="section-box container mt-4">
+    <div>
+        <div class="section-title p-4">
+            <h1>نقشه راه</h1>
+            <hr>
+            <h1 style="text-align: center; color: white">My <span>TimeLine</span></h1>
+            <div class="Pcontainer" dir="ltr">
+
+                <div class="timeline-block timeline-block-right">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3>1378</h3>
+                        <span>تولد</span>
+                        <p> در سال 1378 در استان البرز شهر کرج متولد شدم. </p>
+                    </div>
+                </div>
+
+                <div class="timeline-block timeline-block-left">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3>1385-1394</h3>
+                        <span>دوره ابتدایی تا هنرستان</span>
+                        <p> بین اسن سالها در و دوران دبستان تا هنرستان عشق به دنیای تکنولوژی و کامپیوتر در من به وجود
+                            آماد و در دوران هنرستان به صورت اکادمیک وارد رشته تحصیلی کامپیوتر شدم و در سال 1394 دیپلم
+                            خود را از هنرستان سایپا کرج در رشته کامپیوتر دریافت کردم.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-block timeline-block-right">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3>1395-1397</h3>
+                        <span>دانشگاه</span>
+                        <p>
+                            در سال 1395 رشته نرم افزار - کامپیوتر دانشکده دولتی امام خمینی مازندران به صورت روزانه حضوری
+                            قبول شده و استارت دوره دانشگاهی من در رشته نرم افزار کامپیوتر خورد, و دو سال بعد در این رشته
+                            با مدرک فوق دیپلم فارق التحصیل شدم
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-block timeline-block-left">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3>1398-1400</h3>
+                        <span>خدمت نظام وظیفه</span>
+                        <p>
+                            در سال 1398 پس از فارق التحصیلی. برهه جدیدی از زندگی من شکل گرفت و به خدمت نظام وظیفه اعزام
+                            شدم. و در آنجا با درجه گروهبان یکمی و به عنوان افسر آموزش به مدت دو سال شروع به فعالیت کردم,
+                            در سال 1400. خدمت را پس از دوسال به پایان رساندم.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-block timeline-block-right">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3>1400</h3>
+                        <span>فرانت اند و بک اند وب</span>
+                        <p>
+                            پس از پایان خدمت. به صورت تخصصی وارد رشته مورد علاقه خود یعنی برنامه نویسی وب و حوضه
+                            تکنولوژی شدم, و به صورت تخصصی شروع به یادگیری فرانت اند - بک اند - دیتا بیس - گیت و گیت هاب
+                            و... کردم.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-block timeline-block-left">
+                    <div class="marker"></div>
+                    <div class="timeline-content">
+                        <h3>1401-Now</h3>
+                        <span>یادگیری برنامه نویسی فول استک</span>
+                        <p> پس از فراگیری فرانت اند و بک اند حال در سطح جونیور سعی در فراگیری هر چه بیشتر مسائل دارم و
+                            درگیر یادگیری و رزومه ساختن هستم.
+                            و در تیم
+                            <a href="https://github.com/4xmen" target="_blank" style="color:#d6181a;">4xmen</a>
+                            سعی در کار کردن بر روی پروژه ها مختلف و اوپن سورس دارم. </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Project Section End-->
+
+<!-- Project Section-->
+<section id="Works" class="section-box container mt-4">
+    <div>
+        <div class="section-title p-4">
+            <h1>پروژه ها</h1>
+            <hr>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-4 col-sm-6 my-3 my-md-5 works-box">
+                        <div class="img-box">
+                            <img src="assets/img/works/github-achievement.png" class="img-fluid"
+                                 alt="Get-Github-Achievements">
+                            <div class="overlay">
+                                <div class="center-box">
+                                    <div class="text-title">Github Achievement Course</div>
+                                    <div class="text-desc">پروژه اوپن سورس آموزش دریافت پیت گیت هاب</div>
+
+                                    <a href="https://github.com/4xmen/Get-Github-Achievements" target="_blank">
+                                        <button>مشاهده</button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 my-3 my-md-5 works-box">
+                        <div class="img-box">
+                            <img src="assets/img/works/mahgold.png" class="img-fluid" alt="MahGoldGallery.com">
+                            <div class="overlay">
+                                <div class="center-box">
+                                    <div class="text-title">MahGoldGallery</div>
+                                    <div class="text-desc">فرانت اند با ابزار بوت استرپ و Sass </div>
+
+                                    <a href="https://www.mahgoldgallery.com/" target="_blank">
+                                        <button>مشاهده</button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 my-3 my-md-5 works-box">
+                        <div class="img-box">
+                            <img src="assets/img/works/pacific-pretech.png" class="img-fluid" alt="Pacific-Pretech.com">
+                            <div class="overlay">
+                                <div class="center-box">
+                                    <div class="text-title">Pacific Pretech</div>
+                                    <div class="text-desc">فرانت اند و ابزار بوت استرپ ورژن 5.0</div>
+
+                                    <a href="https://pacific-pretech.com/" target="_blank">
+                                        <button>مشاهده</button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-6 my-3 my-md-5 works-box">
+                        <div class="img-box">
+                            <img src="assets/img/works/rahnavardpaya.png" class="img-fluid" alt="">
+                            <div class="overlay">
+                                <div class="center-box">
+                                    <div class="text-title">Rahnavard Paya</div>
+                                    <div class="text-desc">فرانت و ابزار بوت استرپ ورژن 5.2</div>
+
+                                    <a href="https://rahnavardpaya.com/" target="_blank">
+                                        <button>مشاهده</button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-6 my-3 my-md-5 works-box">
+                        <div class="img-box">
+                            <img src="assets/img/works/github-cover.jpg" class="img-fluid" alt="Web-Package-RTL">
+                            <div class="overlay">
+                                <div class="center-box">
+                                    <div class="text-title">Web Package RTL</div>
+                                    <div class="text-desc">پکیج کامل سمپل راست چین مختص فارسی زبانان</div>
+
+                                    <a href="https://github.com/4xmen/Web-Package-RTL" target="_blank">
+                                        <button>مشاهده</button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-6 my-3 my-md-5 works-box">
+                        <div class="img-box">
+                            <img src="assets/img/works/yasindehfuli.png" class="img-fluid" alt="YasinDehfuli.ir">
+                            <div class="overlay">
+                                <div class="center-box">
+                                    <div class="text-title">Personal Portfolio</div>
+                                    <div class="text-desc">صفحه پورتفولیو شخصی ابزار بوت استرپ 5.2</div>
+
+                                    <a href="#">
+                                        <button>مشاهده</button>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Project Section End-->
+
+<!--Btn To Top-->
+<section>
+    <div class="text-center mt-5">
+        <button class="mb-5 backtop-btn" onclick="topFunction()" id="myBtn" title="Go to top">Go To Top
+        </button>
+    </div>
+    <script>
+        // Get the button
+        let mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () {
+            scrollFunction()
+        };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.margin = "auto";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+</section>
+<!--Btn to Top End-->
+
+<!-- Footer-->
+<footer id="footer" class="container">
+    <div class="container">
+        <h3>Contact Me</h3>
+        <div class="social-links">
+            <a href="mailto:ydehfuli@gmail.com" target="_blank" class="gmail"><i class="fab fa-google"></i></a>
+            <a href="https://www.linkedin.com/in/Yasin-Dehfuli" target="_blank" class="Linkdin"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://www.Telegram.me/iYasin" target="_blank" class="telegram"><i
+                    class="fab fa-telegram"></i></a>
+            <a href="https://www.Twitter.com/YasinDehfuli" target="_blank" class="twitter"><i
+                    class="fab fa-twitter"></i></a>
+            <a href="https://www.github.com/YasinDehfuli" target="_blank" class="linkedin"><i class="fab fa-github"></i></a>
+            <a href="https://codepen.io/YasinDehfuli" target="_blank" class="Codepen"><i class="fab fa-codepen"></i></a>
+        </div>
+        <div class="copyright">
+            2022 &copy; Portfolio <strong><span>Nisay</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+            Designed by <a href="https://github.com/YasinDehfuli" target="_blank">Nisay</a>
+        </div>
+    </div>
+</footer>
+<!--Footer And-->
+</body>
+</html>
