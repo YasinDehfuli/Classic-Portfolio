@@ -148,11 +148,11 @@ a{
 /*--------------------------------------------------------------
 # my works
 --------------------------------------------------------------*/
-#Works a {
+#Projects a {
     text-decoration: none;
     color: var(--font-light);
 }
-#Works .img-box {
+#Projects .img-box {
     position: relative;
     width: 100%;
     padding: 15px;
@@ -162,7 +162,7 @@ a{
     color: white;
     height: 256px;
 }
-#Works .img-box .text-title {
+#Projects .img-box .text-title {
     font-weight: bolder;
     text-align: center;
     font-size: 18px;
@@ -170,14 +170,14 @@ a{
     text-shadow: 3px 3px 5px #14181B;
     cursor: default;
 }
-#Works .img-box .text-desc {
+#Projects .img-box .text-desc {
     text-align: center;
     font-size: 15px;
     color: var(--font-dark);
     text-shadow: 5px 5px 5px #1D2429;
     cursor: default;
 }
-#Works .img-box button {
+#Projects .img-box button {
     cursor: pointer;
     margin: 12px auto;
     z-index: 2;
@@ -193,7 +193,7 @@ a{
     position: relative;
     color: var(--font-dark);
 }
-#Works .img-box button::before {
+#Projects .img-box button::before {
     content: "";
     display: block;
     width: 100%;
@@ -207,7 +207,7 @@ a{
     border-left: solid 4px #1BFD9C;
     transition: all .4s ease-in-out;
 }
-#Works .img-box button::after {
+#Projects .img-box button::after {
     content: "";
     display: block;
     width: 100%;
@@ -221,25 +221,25 @@ a{
     border-right: solid 4px #1BFD9C;
     transition: all .4s ease-in-out;
 }
-#Works .img-box button:hover::before {
+#Projects .img-box button:hover::before {
     transform: translate(0%, 0%) scaleX(1) scaleY(1);
     border-top: solid 1px #1BFD9C;
     border-left: solid 1px #1BFD9C;
 }
-#Works .img-box button:hover::after {
+#Projects .img-box button:hover::after {
     transform: scaleX(1) scaleY(1) translate(0%, 0%);
     border-bottom: solid 1px #1BFD9C;
     border-right: solid 1px #1BFD9C;
 }
-#Works .img-box:hover .overlay {
+#Projects .img-box:hover .overlay {
     opacity: 1;
 }
-#Works img {
+#Projects img {
     display: block;
     width: 100%;
     height: 100%;
 }
-#Works .overlay {
+#Projects .overlay {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -252,7 +252,7 @@ a{
     background: #14181b;
     background: linear-gradient(165deg, rgba(20, 24, 27, 0.646078) 30%, var(--dark-color) 55%, rgba(29, 36, 41, 0.587255) 73%);
 }
-#Works .center-box {
+#Projects .center-box {
     margin: 0;
     position: absolute;
     top: 50%;
@@ -260,7 +260,7 @@ a{
     transform: translate(-50%, -50%);
     max-width: 100%;
 }
-#Works .works-pagination #app {
+#Projects .works-pagination #app {
     width: 180px;
     height: 20px;
     margin: 0 auto;
@@ -268,7 +268,7 @@ a{
     overflow: hidden;
     z-index: 1;
 }
-#Works .works-pagination .button {
+#Projects .works-pagination .button {
     width: 15px;
     height: 15px;
     float: left;
@@ -278,10 +278,10 @@ a{
     cursor: pointer;
     transition: 0.3s ease width;
 }
-#Works .works-pagination .button:last-child {
+#Projects .works-pagination .button:last-child {
     margin-right: 0;
 }
-#Works .works-pagination .button.active {
+#Projects .works-pagination .button.active {
     width: 60px;
     cursor: auto;
 }
