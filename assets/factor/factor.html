@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="rgba(161,180,150,0.55)"/>
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#223322"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon/site.webmanifest">
+    <title>Portfolio | Factor </title>
+    <!--    Scripts-->
+    <script src="../../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <!--    Links -->
+    <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="factor.css">
+    <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <style>
+
+    </style>
+</head>
+<body>
+
+<section class="header">
+    <img alt="Logo" src="../img/favicon/android-chrome-512x512.png">
+</section>
+
+<section class="container col-md-8 mx-auto border border-1 rounded-2 mt-2 row p-4">
+    <div class="col-6 col-md-4 ">
+    <span class="d-flex">
+       کلاینت:
+      <input type="text" placeholder=" نام کلاینت " class="form-control editable"/>
+    </span>
+    </div>
+    <div class="col-6 col-md-4 ">
+    <span class="d-flex">
+      شرکت:
+      <input dir="rtl" type="text" placeholder=" نام برند " class="form-control editable"/>
+    </span>
+    </div>
+    <div class="col-6 col-md-4 ">
+    <span class="d-flex">
+      دامنه:
+      <input dir="ltr" type="text" placeholder=" google.com" class="form-control editable"/>
+    </span>
+    </div>
+    <div class="col-6 col-md-4 ">
+    <span class="d-flex">
+      تلفن:
+      <input dir="ltr" type="text" placeholder=" +۹۸۹۱۲۳۴۵۶۷۸۹ " class="form-control editable"/>
+    </span>
+    </div>
+    <div class="col-6 col-md-4 ">
+    <span class="d-flex">
+      ایمیل:
+      <input dir="ltr" type="text" placeholder=" example@mail.com " class="form-control editable"/>
+    </span>
+    </div>
+    <div class="col-6 col-md-4 ">
+    <span class="d-flex">
+      آیدی:
+      <input dir="ltr" type="text" placeholder=" @example " class="form-control editable"/>
+    </span>
+    </div>
+
+
+</section>
+
+<section class="container col-md-8 mx-auto mt-5">
+    <table class="table">
+        <thead>
+        <tr>
+            <th>شرح</th>
+            <th>نوع پرداخت</th>
+            <th>مبلغ</th>
+            <th>#</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr id="addRow">
+            <td class="col-xs-3">
+                <input class="form-control addMain" type="text" placeholder="شرح کار را وارد کنید"/>
+            </td>
+            <td class="col-xs-5">
+                <input class="form-control addCommon" type="text" placeholder="نوع پرداخت را وارد کنید"/>
+            </td>
+            <td class="col-xs-3">
+                <input class="form-control addPrefer" type="text" placeholder="مبلغ را وارد کنید"/>
+            </td>
+            <td class="col-xs-1 text-center">
+        <span class="addBtn">
+            <i class="fa fa-plus"></i>
+          </span>
+            </td>
+        </tr>
+        <tr>
+            <td class="col-xs-3"><input type="text" value="فرانت اند" class="form-control editable"/></td>
+            <td class="col-xs-5"><input type="text" value="سالانه" class="form-control editable"/></td>
+            <td class="col-xs-3"><input type="text" value="۲۰.۰۰۰.۰۰۰ ﷼" class="form-control editable"/></td>
+            <td class="col-xs-1 text-center"><a href="#" onClick="deleteRow(this)"><i class="fa-solid fa-xmark"></i></a>
+            </td>
+        </tr>
+        <tr>
+            <td class="col-xs-3"><input type="text" value="بک اند" class="form-control editable"/></td>
+            <td class="col-xs-5"><input type="text" value="سالانه" class="form-control editable"/></td>
+            <td class="col-xs-3"><input type="text" value="۴۰.۰۰۰.۰۰۰ ﷼" class="form-control editable"/></td>
+            <td class="col-xs-1 text-center"><a href="#" onClick="deleteRow(this)"><i class="fa-solid fa-xmark"></i></a>
+            </td>
+        </tr>
+        <tr>
+            <th>
+                جمع کل
+            </th>
+            <td></td>
+            <td class="col-xs-3"><input type="text" value=" ۶۰.۰۰۰.۰۰۰ ﷼" class="form-control editable"/></td>
+
+
+        </tr>
+        </tbody>
+    </table>
+
+</section>
+
+<script src="factor.js"></script>
+
+
+</body>
+</html>
