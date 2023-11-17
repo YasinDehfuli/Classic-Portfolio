@@ -1,0 +1,45 @@
+@import "vazirmatn/Vazirmatn-font-face.css";
+@import "vazirmatn/Vazirmatn-Variable-font-face.css";
+
+*{
+    font-family: Vazirmatn, "Vazirmatn FD", sans-serif;
+}
+
+.header{
+    border-bottom: 1px solid #ddd;
+    padding: 16px 0 24px;
+    text-align: center;
+}
+.header img{
+        width: 100px;
+}
+
+.remove {
+    background: #f1f1f1;
+}
+.remove td {
+    font-style: italic;
+}
+.table>tbody>tr>td {
+    vertical-align: middle;
+}
+.table tr th{
+    background-color: #9d9d9d30;
+    backdrop-filter: blur(10px);
+}
+
+.input-group {
+    width: 100%;
+}
+.editable {
+    border: none;
+    padding: 0;
+    margin: 0;
+    text-shadow: none;
+    box-shadow: none;
+    color: gray;
+}
+.addBtn {
+    cursor: pointer;
+    color: green;
+}
