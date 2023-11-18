@@ -30,6 +30,52 @@
     <img alt="Logo" src="../img/favicon/android-chrome-512x512.png">
 </section>
 
+<section dir="ltr" class="container col-md-8 mx-auto border border-1 rounded-2 mt-2 row p-4 ">
+    <div class="position-relative w-100">
+        <div class="position-absolute payment">
+            در انتظار پرداخت
+        </div>
+    </div>
+    <div class="col-6 ">
+    <span class="d-flex">
+       Developer:
+      <input type="text" value=" Yasin Dehfuli " class="form-control editable w-50 b-value"/>
+    </span>
+    </div>
+    <div class="col-6 ">
+    <span class="d-flex">
+      Email:
+      <input  type="text" value=" Ydehfuli@proton.me " class="form-control editable w-50 b-value"/>
+    </span>
+    </div>
+    <div class="col-6 ">
+    <span class="d-flex">
+      Num:
+      <input type="text" value="  +98 902 846 4066 " class="form-control editable w-50 b-value"/>
+    </span>
+    </div>
+    <div class="col-6 ">
+    <span class="d-flex">
+      Website:
+      <input type="text" value=" YasinDehfuli.ir " class="form-control editable w-50 b-value"/>
+    </span>
+    </div>
+    <div class="col-6 ">
+    <span class="d-flex">
+      Telegram:
+      <input type="text" value=" @iYacin " class="form-control editable w-50 b-value"/>
+    </span>
+    </div>
+    <div class="col-6 ">
+    <span class="d-flex">
+        Date:
+      <input type="text" value=" 1402/9/26 " class="form-control editable w-50 b-value"/>
+    </span>
+    </div>
+
+
+</section>
+
 <section class="container col-md-8 mx-auto border border-1 rounded-2 mt-2 row p-4">
     <div class="col-6 col-md-4 ">
     <span class="d-flex">
@@ -72,7 +118,7 @@
 </section>
 
 <section class="container col-md-8 mx-auto mt-5">
-    <table class="table">
+    <table id="mytable" class="table">
         <thead>
         <tr>
             <th>شرح</th>
@@ -101,14 +147,14 @@
         <tr>
             <td class="col-xs-3"><input type="text" value="فرانت اند" class="form-control editable"/></td>
             <td class="col-xs-5"><input type="text" value="سالانه" class="form-control editable"/></td>
-            <td class="col-xs-3"><input type="text" value="۲۰.۰۰۰.۰۰۰ ﷼" class="form-control editable"/></td>
+            <td class="col-xs-3"><input type="text" value="100000" class="form-control editable numberInput"/></td>
             <td class="col-xs-1 text-center"><a href="#" onClick="deleteRow(this)"><i class="fa-solid fa-xmark"></i></a>
             </td>
         </tr>
         <tr>
             <td class="col-xs-3"><input type="text" value="بک اند" class="form-control editable"/></td>
             <td class="col-xs-5"><input type="text" value="سالانه" class="form-control editable"/></td>
-            <td class="col-xs-3"><input type="text" value="۴۰.۰۰۰.۰۰۰ ﷼" class="form-control editable"/></td>
+            <td class="col-xs-3"><input type="text" value="100000" class="form-control editable numberInput"/></td>
             <td class="col-xs-1 text-center"><a href="#" onClick="deleteRow(this)"><i class="fa-solid fa-xmark"></i></a>
             </td>
         </tr>
@@ -117,7 +163,7 @@
                 جمع کل
             </th>
             <td></td>
-            <td class="col-xs-3"><input type="text" value=" ۶۰.۰۰۰.۰۰۰ ﷼" class="form-control editable"/></td>
+            <td id="total" class="col-xs-3"><input type="text" value=" ۶۰.۰۰۰.۰۰۰ ﷼" class="form-control editable"/></td>
 
 
         </tr>
