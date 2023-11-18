@@ -39,7 +39,19 @@
     box-shadow: none;
     color: gray;
 }
+.b-value{
+    color: black;
+}
 .addBtn {
     cursor: pointer;
     color: green;
+}
+
+.payment{
+    right: 0;
+    color: red;
+    color: green;
+    color: burlywood;
+    font-size: 19px;
+    font-weight: 999;
 }
