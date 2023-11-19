@@ -1,5 +1,5 @@
-@import "vazirmatn/Vazirmatn-font-face.css";
-@import "vazirmatn/Vazirmatn-Variable-font-face.css";
+/*@import "vazirmatn/Vazirmatn-font-face.css";*/
+/*@import "vazirmatn/Vazirmatn-Variable-font-face.css";*/
 
 *{
     font-family: Vazirmatn, "Vazirmatn FD", sans-serif;
@@ -54,4 +54,27 @@
     color: burlywood;
     font-size: 19px;
     font-weight: 999;
+}
+
+@media only screen and (max-width: 600px) {
+body{
+    font-size: 10px !important;
+}
+    .form-control{
+        padding: 0;
+        font-size: 9px;
+        width: 75% !important;
+    }
+    .payment {
+        top: -20px;
+        right: -20px;
+        font-size: 9px;
+        font-weight: 500;
+    }
+    .header img{
+        width: 50px;
+    }
+    .mpdatepicker{
+        padding: 0 !important;
+    }
 }
