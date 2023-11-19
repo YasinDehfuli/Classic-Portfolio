@@ -30,6 +30,7 @@
     "animate.css": "^4.1.1",
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.1",
+    "mpdatepicker": "^2.0.1",
     "vazirmatn": "^33.0.3"
   }
 }
