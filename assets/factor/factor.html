@@ -20,6 +20,12 @@
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="factor.css">
     <link rel="stylesheet" href="../../node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <!--    DatePicker -->
+    <script type="text/javascript" src="jquery.mpdatepicker.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="jquery.mpdatepicker.min.css"/>
+
+    <link href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" rel="stylesheet" type="text/css" />
     <style>
 
     </style>
@@ -27,7 +33,7 @@
 <body>
 
 <section class="header">
-    <img alt="Logo" src="../img/favicon/android-chrome-512x512.png">
+    <img alt="Logo" src="logo.png">
 </section>
 
 <section dir="ltr" class="container col-md-8 mx-auto border border-1 rounded-2 mt-2 row p-4 ">
@@ -45,7 +51,7 @@
     <div class="col-6 ">
     <span class="d-flex">
       Email:
-      <input  type="text" value=" Ydehfuli@proton.me " class="form-control editable w-50 b-value"/>
+      <input type="text" value=" Ydehfuli@proton.me " class="form-control editable w-50 b-value"/>
     </span>
     </div>
     <div class="col-6 ">
@@ -118,7 +124,7 @@
 </section>
 
 <section class="container col-md-8 mx-auto mt-5">
-    <table id="mytable" class="table">
+    <table id="mytable" class="table text-center">
         <thead>
         <tr>
             <th>شرح</th>
@@ -130,13 +136,13 @@
         <tbody>
         <tr id="addRow">
             <td class="col-xs-3">
-                <input class="form-control addMain" type="text" placeholder="شرح کار را وارد کنید"/>
+                <input class="form-control addMain text-center" type="text" placeholder="شرح کار را وارد کنید"/>
             </td>
             <td class="col-xs-5">
-                <input class="form-control addCommon" type="text" placeholder="نوع پرداخت را وارد کنید"/>
+                <input class="form-control addCommon text-center" type="text" placeholder="نوع پرداخت را وارد کنید"/>
             </td>
             <td class="col-xs-3">
-                <input class="form-control addPrefer" type="text" placeholder="مبلغ را وارد کنید"/>
+                <input class="form-control addPrefer text-center" type="text" placeholder="مبلغ را وارد کنید"/>
             </td>
             <td class="col-xs-1 text-center">
         <span class="addBtn">
@@ -145,16 +151,16 @@
             </td>
         </tr>
         <tr>
-            <td class="col-xs-3"><input type="text" value="فرانت اند" class="form-control editable"/></td>
-            <td class="col-xs-5"><input type="text" value="سالانه" class="form-control editable"/></td>
-            <td class="col-xs-3"><input type="text" value="100000" class="form-control editable numberInput"/></td>
+            <td class="col-xs-3"><input type="text" value="فرانت اند" class="form-control editable text-center"/></td>
+            <td class="col-xs-5"><input type="text" value="سالانه" class="form-control editable text-center"/></td>
+            <td class="col-xs-3"><input type="text" value="100000" class="form-control editable numberInput text-center"/></td>
             <td class="col-xs-1 text-center"><a href="#" onClick="deleteRow(this)"><i class="fa-solid fa-xmark"></i></a>
             </td>
         </tr>
         <tr>
-            <td class="col-xs-3"><input type="text" value="بک اند" class="form-control editable"/></td>
-            <td class="col-xs-5"><input type="text" value="سالانه" class="form-control editable"/></td>
-            <td class="col-xs-3"><input type="text" value="100000" class="form-control editable numberInput"/></td>
+            <td class="col-xs-3"><input type="text" value="بک اند" class="form-control editable text-center"/></td>
+            <td class="col-xs-5"><input type="text" value="سالانه" class="form-control editable text-center"/></td>
+            <td class="col-xs-3"><input type="text" value="100000" class="form-control editable text-center numberInput"/></td>
             <td class="col-xs-1 text-center"><a href="#" onClick="deleteRow(this)"><i class="fa-solid fa-xmark"></i></a>
             </td>
         </tr>
@@ -163,7 +169,8 @@
                 جمع کل
             </th>
             <td></td>
-            <td id="total" class="col-xs-3"><input type="text" value=" ۶۰.۰۰۰.۰۰۰ ﷼" class="form-control editable"/></td>
+            <td id="total" class="col-xs-3"><input type="text" value=" ۶۰.۰۰۰.۰۰۰ ﷼" class="form-control editable"/>
+            </td>
 
 
         </tr>
@@ -172,7 +179,40 @@
 
 </section>
 
+<section class="pay-method container col-md-8 mx-auto mt-5 table-responsive">
+    <table class="table table-sm text-center" style="max-width: 100%;">
+        <thead>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">تاریخ پرداخت</th>
+            <th scope="col">درگاه</th>
+            <th scope="col">شناسه</th>
+            <th scope="col">مبلغ</th>
+        </tr>
+        </thead>
+        <tbody class="table-group-divider">
+        <tr>
+            <th scope="row">1</th>
+            <td class="w-25">
+                <input class="sample-date-picker bg-white border-0 "
+                       placeholder="تاریخ" type="text" id="date">
+            </td>
+            <td>کارت به کارت</td>
+            <td>۹۹۱۳۸۱۰۷۳۴</td>
+            <td>۸۰,۰۰۰,۰۰۰ ﷼</td>
+        </tr>
+        <tr>
+            <th scope="row">-</th>
+            <td colspan="3">مانده:</td>
+            <td> ۹۰,۰۰۰,۰۰۰ ﷼</td>
+
+        </tr>
+        </tbody>
+    </table>
+</section>
+
 <script src="factor.js"></script>
+<script src="date-picker.js"></script>
 
 
 </body>
